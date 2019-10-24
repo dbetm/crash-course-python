@@ -1,9 +1,9 @@
 class User():
-    def __init__(self):
-        self.nombre = "desconocido"
-        self.apellido = "desconocido"
-        self.edad = -1
-        self.isAdmin = False
+    # def __init__(self):
+    #     self.nombre = "desconocido"
+    #     self.apellido = "desconocido"
+    #     self.edad = -1
+    #     self.isAdmin = False
 
     def __init__(self, nombre, apellido, edad, isAdmin):
         self.nombre = nombre
