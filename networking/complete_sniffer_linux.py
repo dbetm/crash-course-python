@@ -31,7 +31,7 @@ while True:
     print("Destination MAC: " + eth_addr(packet[0:6]) + " Src MAC: "  + eth_addr(packet[6:12]) + ' Protocol: ' + str(eth_protocol))
 
     # Parse IP packets, IP protocol number = 8
-    """
+    
     if(eth_protocol == 8):
         # Parse IP header
         # Take first 20 chars for the ip header
@@ -50,4 +50,4 @@ while True:
         s_addr = socket.inet_ntoa(iph[8])
         d_addr = socket.inet_ntoa(iph[9])
         print("Version: " + str(version) + " IP Header lenght: " + str(ihl) + " TTL: " + str(ttl) + " Protocol: " + str(protocol) + " Source address: " + str(s_addr) + " Destination address: " + str(d_addr))
-    """
+    
