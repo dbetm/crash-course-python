@@ -1,11 +1,6 @@
-# Import matplotlib.pyplot
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-
-"""Now you have some familiarity with plt.subplot(), you can use it to plot
-more plots in larger grids of subplots of the same figure.
-"""
 
 # Retry data
 data = pd.read_csv('data/enrollment_of_women.csv')
@@ -30,34 +25,38 @@ health = np.array([77.1, 75.5, 76.9, 77.4, 77.9, 78.9, 79.2, 80.5, 81.9,
         86.5, 86.5, 86. , 85.9, 85.4, 85.2, 85.1, 85. , 84.8]
     )
 
-# Create a figure with 2x2 subplot layout and make the top left subplot active
-plt.subplot(2,2,1)
+# Set the style to 'dark_background'
+plt.style.use('dark_background')
+# print all the available style sheets
+print(plt.style.available)
 
-# Plot in blue the % of degrees awarded to women in the Physical Sciences
+# Create a figure with 2x2 subplot layout
+plt.subplot(2, 2, 1)
+
+# Plot the enrollment % of women in the Physical Sciences
 plt.plot(year, physical_sciences, color='blue')
 plt.title('Physical Sciences')
 
-# Make the top right subplot active in the current 2x2 subplot grid
-plt.subplot(2,2,2)
-
-# Plot in red the % of degrees awarded to women in Computer Science
+# Plot the enrollment % of women in Computer Science
+plt.subplot(2, 2, 2)
 plt.plot(year, computer_science, color='red')
 plt.title('Computer Science')
 
-# Make the bottom left subplot active in the current 2x2 subplot grid
-plt.subplot(2,2,3)
+# Add annotation
+cs_max = computer_science.max()
+yr_max = year[computer_science.argmax()]
+plt.annotate('Maximum', xy=(yr_max, cs_max), xytext=(yr_max-1, cs_max-10), arrowprops=dict(facecolor='black'))
 
-# Plot in green the % of degrees awarded to women in Health Professions
+# Plot the enrollmment % of women in Health professions
+plt.subplot(2, 2, 3)
 plt.plot(year, health, color='green')
 plt.title('Health Professions')
 
-# Make the bottom right subplot active in the current 2x2 subplot grid
-plt.subplot(2,2,4)
-
-# Plot in yellow the % of degrees awarded to women in Education
+# Plot the enrollment % of women in Education
+plt.subplot(2, 2, 4)
 plt.plot(year, education, color='yellow')
 plt.title('Education')
 
-# Improve the spacing between subplots and display them
+# Improve spacing between subplots and display them
 plt.tight_layout()
 plt.show()
