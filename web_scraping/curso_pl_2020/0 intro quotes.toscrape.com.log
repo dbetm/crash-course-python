@@ -1,0 +1,6 @@
+$x('//h1/text()').map(x => x.wholeText)
+(2) ["↵                    ", "↵                "]0: "↵                    "1: "↵                "length: 2__proto__: Array(0)
+$x('//h1/a/text()').map(x => x.wholeText)
+["Quotes to Scrape"]0: "Quotes to Scrape"length: 1__proto__: Array(0)
+$x('//span/@class')
+(21) [class, class, class, class, class, class, class, class, class, class, class, class, class, class, class, class, class, class, class, class, class]0: class1: class2: class3: class4: class5: class6: class7: class8: class9: class10: class11: class12: class13: class14: class15: class16: class17: class18: class19: class20: classlength: 21__proto__: Array(0)

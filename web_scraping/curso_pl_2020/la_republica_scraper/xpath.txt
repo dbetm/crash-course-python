@@ -1,0 +1,6 @@
+Archivo de referencia:
+
+Links de todas las noticias en HOME: //h2[@class="headline"]/a/@href
+Título de una noticia: //h1[@class="headline"]/a/text()
+Resumen de una noticia: //div[@class="lead"]/p/text()
+Cuerpo de una noticia: //div[@class="articleWrapper "]/p[not(@class)]/text()
