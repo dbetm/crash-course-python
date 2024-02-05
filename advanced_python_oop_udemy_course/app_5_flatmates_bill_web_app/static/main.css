@@ -1,0 +1,28 @@
+body {
+    background-color: ghostwhite;
+    padding: 20px;
+}
+
+h2  {
+    color: darkgray;
+    text-align: center;
+    font-size: 50px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 6px 4px;
+    margin: 10px 0;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
