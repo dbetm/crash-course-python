@@ -1,0 +1,39 @@
+Cosmic rays are high-energy particles originating from outer space that strike the 
+Earth's atmosphere. These particles mainly consist of protons, with some heavier 
+nuclei and a small fraction of positrons and electrons. Cosmic rays can have energies 
+ranging from a few million electronvolts to over 10^20 electronvolts, and they come 
+from various sources, including the sun, outside the solar system, and distant galaxies.
+
+### Detection of Cosmic Rays Using Smartphones
+
+The detection of cosmic rays using smartphones is a relatively recent development 
+enabled by the use of smartphone cameras. These cameras contain CMOS (complementary 
+metal-oxide-semiconductor) sensors, which are generally used for capturing images but 
+can also detect high-energy particles. When a cosmic ray particle strikes these sensors, 
+it can generate a trail of charged particles that create a temporary track of light, 
+recorded as a streak in the image data.
+
+#### How It Works
+
+1. **Sensor Activation**: When not in use for photography, the camera sensor in a smartphone 
+can still be activated by specific apps designed to detect cosmic rays.
+2. **Detection Mechanism**: As cosmic rays hit the sensor, they produce small points or 
+streaks of light due to the interaction of the rays with the silicon of the sensor. These 
+interactions are similar to how traditional particle detectors, like those used in physics 
+experiments, work.
+3. **Data Collection**: Apps designed for cosmic ray detection use algorithms to analyze the 
+captured images to distinguish between cosmic rays and other sources of noise or interference, 
+such as radioactivity or environmental light.
+
+#### Applications and Research
+
+Researchers have proposed using networks of smartphones as a way to create a large-scale and 
+cost-effective method of detecting cosmic rays. This method can complement more traditional
+detection approaches and provide valuable data for studying cosmic ray intensity and distribution. 
+For example, the CRAYFIS (Cosmic RAYs Found In Smartphones) project aims to use this technology to create a global network of smartphones that can detect cosmic rays, potentially increasing the detected volume of these particles significantly.
+
+This approach is particularly useful for gathering large-scale data over wide geographical areas 
+and can help in educational and citizen science projects, allowing the public to engage directly 
+with cutting-edge physics research.
+
+source: ChatGPT-4
