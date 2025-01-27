@@ -164,3 +164,6 @@ cython_debug/
 #.idea/
 
 **/.DS_Store
+
+# data
+advanced_python_oop_udemy_course/app_8_instant_dict_web_app/data.csv
