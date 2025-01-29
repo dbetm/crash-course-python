@@ -8,3 +8,6 @@ class Definition:
 
     def get(self, term: str):
         return tuple(self.data.loc[self.data["word"] == term]["definition"])
+    
+
+definer = Definition("data.csv")
