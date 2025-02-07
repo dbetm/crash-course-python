@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='yet-another-sunnyday',  # Your package will have this name
+    name='yet_another_sunnyday',  # Your package will have this name
     packages=['sunnyday'],  # Name the package again
-    version='1.0.0',  # To be increased every time you change your library
+    version='2.0.0',  # To be increased every time you change your library
     license='MIT',  # Type of license. More here: https://help.github.com/articles/licensing-a-repository
     description='Weather forecast data',  # Short description of your library
     author='David Betancourt',  # Your name

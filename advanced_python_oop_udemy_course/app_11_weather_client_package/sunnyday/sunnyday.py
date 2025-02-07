@@ -23,6 +23,8 @@ class Weather:
     ### Get simplified data for the next 12 hours:
     >>> weather1.next_12h_simplified()
 
+    ### Sample URL to get the sky conditions icons:
+    https://openweathermap.org/img/wn/10d@2x.png
     """
     base_url = (
         "https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units={units}&appid={api_key}"
@@ -68,7 +70,8 @@ class Weather:
                     hour_data["main"]["temp_min"],
                     hour_data["main"]["temp"],
                     hour_data["main"]["temp_max"],
-                    hour_data["weather"][0]["description"]
+                    hour_data["weather"][0]["description"],
+                    hour_data["weather"][0]["icon"]
                 )
             )
         return simplified_data
